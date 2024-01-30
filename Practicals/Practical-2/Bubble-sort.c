@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 void bubblesort(int arr[], int step)
 {
-  for(int i = 0; i < step - 1; i++)
+    time_t start, end;
+    clock_t t;
+    t = clock();
+    start = time(NULL);
+    for(int i = 0; i < step - 1; i++)
     {
-      for(int j = 0; i < i- step-1;j++)
+      for(int j = 0; j < step - i - 1;j++)
         {
           if (arr[j] > arr[j+1])
           {
@@ -15,19 +19,23 @@ void bubblesort(int arr[], int step)
           }
         }
     }
+    end = time(NULL);
+    t = clock()- t;
+    printf("\n time taken = %f\n", difftime(end, start));
+    printf("clicks = %d (%f sec)\n",t,((float)t)/CLOCKS_PER_SEC);
 }
 
 void printsort (int arr[], int step)
 {
-  for (int i = 0; i < step -1; i++)
+  for (int i = 0; i < step; i++)
     {
-      printf("%d",arr[j]);
+      printf("%d\n",arr[i]);
     }
 }
 int main()
 {
-  int a[] = {14,4,6,32,1,4,5};
-  size = sizeof(a)/sizeof(a[0]);
+  int a[] = {14,6,32,1,4,5};
+  int size = sizeof(a) / sizeof(a[0]);
   bubblesort(a,size);
   printf("Sorted array:");
   printsort(a,size);
