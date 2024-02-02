@@ -29,3 +29,5 @@ Insertion sort works similarly to sorting cards in a card game. It iterates thro
 ### Applications
 
 Insertion sort is suitable for small datasets or when only a few elements need to be sorted. It's commonly used in scenarios where the array is mostly sorted or nearly sorted.
+
+## For further study refer to Practical 2
