@@ -34,3 +34,5 @@ Bubble sort gets its name because smaller elements bubble to the top of the list
     - Average Case: O(n^2) - comparisons and swaps.
     - Worst Case: O(n^2) - when the array is in reverse order.
 - **Space Complexity**: O(1) - constant space required.
+
+## For further study refer Practical 2
