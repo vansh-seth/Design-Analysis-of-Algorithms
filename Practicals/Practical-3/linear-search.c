@@ -13,30 +13,31 @@ void Random(int array[], int size)
     }
 }
 
-int search(int array[], int n, int x, float time_taken) 
+int search(int array[], int n, int x) 
 {
-    time_t start, end;
-    start = time(NULL);
+    clock_t start, end;
+    start = clock();
     for (int i = 0; i < n; i++)
     {
         if (array[i] == x)
         {
-            end = time(NULL);
-            time_taken = difftime(end, start);
+            end = clock();
+            double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+            printf("Time taken: %f seconds\n", time_taken);
             return i;
         }
     }
-    end = time(NULL);
-    time_taken = difftime(end, start);
+    end = clock();
+    double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken: %f seconds\n", time_taken);
     return -1;
 }
 
 int main() {
     int array[SIZE];
     Random(array, SIZE);
-    float time_taken;
     int x = 234;
-    int result = search(array, SIZE, x, time_taken);
+    int result = search(array, SIZE, x);
     if (result == -1)
     {
         printf("Element not found\n");
@@ -45,11 +46,5 @@ int main() {
     {
         printf("Element found at index: %d\n", result);
     }
-    printf("Time taken: %f seconds\n", time_taken);
+    return 0;
 }
-
-/*
-Output:
-Element found at index: 1113
-Time taken: 0.000000 seconds
-*/
