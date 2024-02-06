@@ -12,17 +12,18 @@ void sorted(int array[], int size)
     }
 }
 
-int bin(int array[], int x, int low, int high, float time_taken) 
+int bin(int array[], int x, int low, int high) 
 {
-    time_t start, end;
-    start = time(NULL);
+    clock_t start, end;
+    start = clock();
     while (low <= high) 
     {
         int mid = low + (high - low) / 2;
         if (array[mid] == x)
         {
-            end = time(NULL);
-            time_taken = difftime(end, start);
+            end = clock();
+            double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+            printf("Time taken: %f seconds\n", time_taken);
             return mid;
         }
         else if (array[mid] < x)
@@ -34,17 +35,17 @@ int bin(int array[], int x, int low, int high, float time_taken)
             high = mid - 1;
         }
     }
-    end = time(NULL);
-    time_taken = difftime(end, start);
+    end = clock();
+    double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken: %f seconds\n", time_taken);
     return -1;
 }
 
 int main() {
     int array[SIZE];
     sorted(array, SIZE);
-    float time_taken;
     int x = 9999;
-    int result = bin(array, x, 0, SIZE, time_taken); 
+    int result = bin(array, x, 0, SIZE - 1); 
     if (result == -1)
     {
         printf("Element not found\n");
@@ -53,5 +54,5 @@ int main() {
     {
         printf("Element found at index: %d\n", result);
     }
-    printf("Time taken: %f seconds\n", time_taken);
+    return 0;
 }
