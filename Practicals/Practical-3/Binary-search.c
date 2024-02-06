@@ -56,3 +56,11 @@ int main() {
     }
     return 0;
 }
+
+
+/*
+Output:
+Time taken: 0.000001 seconds
+Element found at index: 9999
+
+*/
