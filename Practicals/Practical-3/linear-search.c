@@ -48,3 +48,9 @@ int main() {
     }
     return 0;
 }
+
+/*
+Output
+Time taken: 0.000005 seconds
+Element found at index: 1750
+*/
