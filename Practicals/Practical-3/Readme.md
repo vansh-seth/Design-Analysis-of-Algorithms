@@ -1,6 +1,6 @@
-# Search Algorithms Practical
+# Search Algorithms Practical in C
 
-This practical exercise covers the implementation and analysis of two fundamental search algorithms: Binary Search and Linear Search.
+This practical exercise covers the implementation and analysis of two fundamental search algorithms: Binary Search and Linear Search, implemented in C.
 
 ## Contents
 
@@ -19,20 +19,22 @@ Binary search is a classic divide-and-conquer algorithm used to find the positio
 
 The binary search algorithm involves repeatedly dividing the search interval in half until the target value is found or the interval is empty. It compares the target value to the middle element of the array and continues the search in the lower or upper half accordingly.
 
-```python
-# Python implementation of binary search
-def binary_search(arr, target):
-    left = 0
-    right = len(arr) - 1
-    while left <= right:
-        mid = left + (right - left) // 2
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-    return -1
+```c
+// C implementation of binary search
+int binary_search(int arr[], int target, int size) {
+    int left = 0;
+    int right = size - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target)
+            return mid;
+        else if (arr[mid] < target)
+            left = mid + 1;
+        else
+            right = mid - 1;
+    }
+    return -1;
+}
 ```
 
 ### Time Complexity
@@ -49,13 +51,15 @@ Linear search is a simple search algorithm that checks every element in the list
 
 The linear search algorithm iterates through each element of the array sequentially until it finds the target value.
 
-```python
-# Python implementation of linear search
-def linear_search(arr, target):
-    for i in range(len(arr)):
-        if arr[i] == target:
-            return i
-    return -1
+```c
+// C implementation of linear search
+int linear_search(int arr[], int target, int size) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == target)
+            return i;
+    }
+    return -1;
+}
 ```
 
 ### Time Complexity
