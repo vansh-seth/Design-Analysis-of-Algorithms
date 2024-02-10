@@ -39,8 +39,6 @@ quickSort(array, 0, len(array) - 1)
 print("Sorted array:", array)
 ```
 
-# Quicksort Algorithm README
-
 ## Time Complexities
 - **Worst Case Complexity [Big-O]:** O(n^2)
   - Occurs when the pivot is the greatest or smallest element, leading to unbalanced partitions.
@@ -77,3 +75,64 @@ print("Sorted array:", array)
 - Quicksort, with its elegant divide-and-conquer strategy, offers an efficient solution for sorting.
 - It achieves optimal performance when the pivot selection is balanced.
 - Quicksort remains a popular choice where time and space efficiency are crucial considerations.
+
+# Random Pivoting in Quicksort using Lomuto Partitioning
+
+## Introduction
+Quicksort is a highly efficient sorting algorithm known for its in-place partitioning and recursive sorting approach. By employing random pivoting, we can further enhance its time complexity, making it even more efficient compared to deterministic pivoting strategies.
+
+## Key Concepts
+- **Partitioning Arrays:** Quicksort partitions the array in place such that elements to the left of the pivot are smaller, while those to the right are greater.
+- **Recursive Sorting:** After partitioning, Quicksort recursively sorts the left and right subarrays.
+- **Random Pivoting:** The pivot element is selected randomly from the array, leading to improved time complexity and avoiding worst-case scenarios.
+
+## Algorithm Steps
+- **`partition(arr[], lo, hi)`:**
+  - Lomuto partition scheme is used.
+  - Selects the pivot as the last element (`arr[hi]`).
+  - Elements smaller than or equal to the pivot are placed to the left, and greater elements to the right.
+  - Returns the index of the pivot after partitioning.
+
+- **`partition_r(arr[], lo, hi)`:**
+  - Randomly selects an index `r` between `lo` and `hi`.
+  - Swaps the element at index `r` with the last element (`arr[hi]`).
+  - Calls `partition(arr, lo, hi)` to perform partitioning with the randomly selected pivot.
+
+- **`quicksort(arr[], lo, hi)`:**
+  - Recursively sorts the array.
+  - Calls `partition_r(arr, lo, hi)` to select a random pivot and partition the array.
+  - Continues recursively sorting the left and right subarrays until the entire array is sorted.
+
+## Code Example
+```python
+def partition(arr, lo, hi):
+    pivot = arr[hi]
+    i = lo
+    for j in range(lo, hi):
+        if arr[j] <= pivot:
+            arr[i], arr[j] = arr[j], arr[i]
+            i += 1
+    arr[i], arr[hi] = arr[hi], arr[i]
+    return i
+
+def partition_r(arr, lo, hi):
+    import random
+    r = random.randint(lo, hi)
+    arr[r], arr[hi] = arr[hi], arr[r]
+    return partition(arr, lo, hi)
+
+def quicksort(arr, lo, hi):
+    if lo < hi:
+        p = partition_r(arr, lo, hi)
+        quicksort(arr, lo, p - 1)
+        quicksort(arr, p + 1, hi)
+```
+
+## Conclusion
+- Quicksort with random pivoting using Lomuto partitioning offers improved time complexity and better performance.
+- By randomly selecting pivots, we mitigate the risk of worst-case scenarios, ensuring more consistent performance across various datasets.
+- The algorithm's simplicity and efficiency make it a preferred choice for sorting large datasets when performance matters.
+
+**Note:**
+Using random pivoting we improve the expected or average time complexity to O (N log N). The Worst-Case complexity is still O ( N^2 ).
+
