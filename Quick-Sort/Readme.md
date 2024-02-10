@@ -10,7 +10,7 @@ Quicksort is a highly efficient sorting algorithm based on the divide and conque
 2. **Rearranging the Array:**
    - Elements are rearranged so that those smaller than the pivot are on the left, and those greater are on the right.
    - This step involves pointer manipulation and swapping to achieve the desired arrangement.
-
+   - 
 3. **Dividing Subarrays:**
    - Subarrays are recursively partitioned and sorted until each subarray contains only one element.
    - The process continues until the entire array is sorted.
