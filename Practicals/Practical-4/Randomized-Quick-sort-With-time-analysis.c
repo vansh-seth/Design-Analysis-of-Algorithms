@@ -74,3 +74,14 @@ int main() {
     printArray(arr, n);
     return 0;
 }
+
+
+/*
+Output:
+
+Original array: 6 4 12 8 15 16 
+Time taken: 0.000012 seconds
+Sorted array: 4 6 8 12 15 16 
+
+
+*/
