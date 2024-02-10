@@ -29,6 +29,8 @@ int partition_right(int arr[], int low, int high) {
 }
 
 void quicksort(int arr[], int low, int high) {
+    clock_t start, end;
+    start = clock();
     int stack[high - low + 1]; 
     int top = -1; 
 
@@ -51,6 +53,9 @@ void quicksort(int arr[], int low, int high) {
             stack[++top] = high;
         }
     }
+    end = clock();
+    double time_taken = ((double)(end - start))/CLOCKS_PER_SEC;
+    printf("Time taken: %f seconds\n", time_taken);
 }
 
 void printArray(int arr[], int size) {
@@ -69,5 +74,3 @@ int main() {
     printArray(arr, n);
     return 0;
 }
-
-
