@@ -1,4 +1,4 @@
-# Quicksort Algorithm README
+# Quicksort Algorithm 
 
 ## Overview
 Quicksort is a highly efficient sorting algorithm based on the divide and conquer approach. It works by selecting a pivot element, partitioning the array around the pivot, and recursively sorting the subarrays.
@@ -38,3 +38,42 @@ array = [5, 3, 8, 6, 2, 7, 1, 4]
 quickSort(array, 0, len(array) - 1)
 print("Sorted array:", array)
 ```
+
+# Quicksort Algorithm README
+
+## Time Complexities
+- **Worst Case Complexity [Big-O]:** O(n^2)
+  - Occurs when the pivot is the greatest or smallest element, leading to unbalanced partitions.
+  - One sub-array becomes empty, resulting in recursive calls on n - 1 elements.
+- **Best Case Complexity [Big-omega]:** O(n*log n)
+  - Occurs when the pivot is the middle or close to the middle element, leading to balanced partitions.
+- **Average Case Complexity [Big-theta]:** O(n*log n)
+  - Prevails when the pivot selection doesn't lead to extreme cases.
+
+## Space Complexity
+- Quicksort has a space complexity of O(log n) due to its recursive nature.
+
+## Quicksort Applications
+- Quicksort is preferred:
+  - in languages supporting recursion well.
+  - when time and space complexities are critical factors.
+
+## Algorithm Overview
+- **Selecting the Pivot:**
+  - Pivot selection greatly influences performance.
+- **Rearranging the Array:**
+  - Elements are sorted around the pivot, ensuring smaller elements are on the left and larger ones on the right.
+- **Divide and Conquer:**
+  - Subarrays are recursively sorted until each subarray contains only one element.
+
+## Usage
+- To apply quicksort:
+  - Call `quickSort(array, 0, length - 1)` with `array` as the input array and proper indices.
+
+## Visual Illustrations
+- Visual aids demonstrate step-by-step execution, aiding comprehension.
+
+## Conclusion
+- Quicksort, with its elegant divide-and-conquer strategy, offers an efficient solution for sorting.
+- It achieves optimal performance when the pivot selection is balanced.
+- Quicksort remains a popular choice where time and space efficiency are crucial considerations.
