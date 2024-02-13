@@ -1,6 +1,3 @@
-Certainly! Below is the README.md content for the Merge Sort algorithm explained in C:
-
----
 
 ## Merge Sort Algorithm in C
 
