@@ -58,3 +58,26 @@ void merge(int arr[], int p, int q, int r) {
         arr[k++] = M[j++];
 }
 ```
+### Time Complexity
+
+- **Best Case Complexity**: O(n*log n)
+- **Worst Case Complexity**: O(n*log n)
+- **Average Case Complexity**: O(n*log n)
+
+Merge Sort demonstrates consistent performance across various scenarios due to its divide-and-conquer approach.
+
+### Space Complexity
+
+Merge Sort has a space complexity of O(n). This space requirement arises mainly from the need for auxiliary arrays during the merging process.
+
+### Stability
+
+Merge Sort is stable, meaning it preserves the relative order of equal elements during the sorting process.
+
+### Applications
+
+Merge Sort finds applications in various domains:
+
+- **Inversion Count Problem**: Merge Sort efficiently solves the inversion count problem, where the task is to find the number of inversions required to make an array sorted.
+- **External Sorting**: Due to its efficient use of external memory, Merge Sort is suitable for sorting large datasets stored on external storage devices like hard drives.
+- **E-commerce Applications**: Merge Sort's stable performance makes it suitable for sorting product listings, customer data, and transaction records in e-commerce applications.
