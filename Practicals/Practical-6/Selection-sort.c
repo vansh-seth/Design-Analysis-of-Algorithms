@@ -38,3 +38,12 @@ int main() {
     printArray(data, size);
     return 0;
 }
+
+/*
+Output:
+
+Time taken: 0.000002 seconds
+Sorted array in Ascending Order:
+2  10  12  15  20  
+
+*/
