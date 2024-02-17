@@ -79,3 +79,45 @@ Sorted array in ascending order:
 ```
 
 Selection sort, though not the most efficient, is easy to understand and implement, making it suitable for educational purposes and small datasets.
+
+## Selection Sort Complexity and Applications
+
+Selection sort is a simple sorting algorithm with straightforward complexity characteristics and specific use cases. Here's a breakdown of its complexity and applications:
+
+## Complexity Analysis:
+
+### Time Complexity:
+- **Best Case**: O(n^2)
+    - Occurs when the array is already sorted, but the algorithm still needs to traverse the entire array.
+- **Worst Case**: O(n^2)
+    - Happens when the array is in reverse sorted order, requiring maximum comparisons and swaps.
+- **Average Case**: O(n^2)
+    - When elements are randomly ordered, the algorithm performs on average at O(n^2).
+
+### Space Complexity:
+- O(1)
+    - Selection sort operates in-place, requiring only a constant amount of extra space for temporary variables.
+
+### Cycle:
+- Number of Comparisons:
+    - The number of comparisons follows a decreasing arithmetic sequence: (n-1) + (n-2) + ... + 1, summing up to approximately n^2.
+
+## Selection Sort Applications:
+
+Selection sort finds its utility in specific scenarios:
+
+1. **Sorting Small Lists**:
+    - Efficient for sorting small arrays where overheads of more complex algorithms might outweigh their benefits.
+
+2. **Swapping Cost Insensitivity**:
+    - Suitable when the cost of swapping elements is relatively cheap or insignificant compared to other operations.
+
+3. **Mandatory Element Checks**:
+    - When it's necessary to compare all elements in the list to ensure proper ordering, selection sort serves well.
+
+4. **Memory Write Considerations**:
+    - Particularly useful in memory environments like flash memory, where the number of writes (swaps) needs to be minimized (O(n) swaps compared to O(n^2) of bubble sort).
+
+## Conclusion:
+
+Selection sort, despite its simplicity, has its niche applications where its characteristics align with specific requirements. Understanding its complexity and applications helps in making informed decisions about its usage.
