@@ -53,3 +53,9 @@ int main()
     printf("Sorted array is \n");
     printArray(arr, n);
 }
+/*
+Output:
+Time taken: 0.000002 seconds
+Sorted array is 
+1 5 6 9 10 12 
+*/
