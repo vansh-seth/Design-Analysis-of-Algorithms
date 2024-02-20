@@ -88,6 +88,10 @@ By following these steps, we ensure that the max-heap property is maintained thr
 
 ![image](https://github.com/vansh-seth/Design-Analysis-of-Algorithms/assets/111755254/6be37a49-b4d6-44e3-adb9-0ecf4dca112c)
 
+![image](https://github.com/vansh-seth/Design-Analysis-of-Algorithms/assets/111755254/f8835e0a-9578-4d14-bb01-21dd794fa87c)
+
+![image](https://github.com/vansh-seth/Design-Analysis-of-Algorithms/assets/111755254/571800a5-e182-4532-8943-99d86345b83a)
+
 As illustrated in the diagram above, we commence by heapifying the smallest subtrees and progressively ascending until reaching the root element.
 
 If you've grasped the concepts thus far, you're well on your way to mastering Heap Sort.
