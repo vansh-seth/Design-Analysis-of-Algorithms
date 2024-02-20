@@ -114,6 +114,7 @@ Heap Sort operates as follows:
 The code snippet below demonstrates the implementation:
 
 ![image](https://github.com/vansh-seth/Design-Analysis-of-Algorithms/assets/111755254/ee998ffa-bffc-459c-9658-4336d90a4c8b)
+
 ![image](https://github.com/vansh-seth/Design-Analysis-of-Algorithms/assets/111755254/f4a0a574-d341-4d7e-9bc0-8a10169166ef)
 
 ```c
