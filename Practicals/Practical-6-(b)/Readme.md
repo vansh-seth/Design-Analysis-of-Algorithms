@@ -126,3 +126,47 @@ for (int i = n - 1; i >= 0; i--) {
   heapify(arr, i, 0);
 }
 ```
+
+## Heap Sort Complexity
+
+Heap Sort is renowned for its time and space efficiency, making it a valuable sorting algorithm in various applications. Let's delve into its complexities and understand why it maintains a consistent O(n log n) time complexity across different scenarios.
+
+### Time Complexity
+
+#### Best Case: O(n log n)
+#### Worst Case: O(n log n)
+#### Average Case: O(n log n)
+
+Heap Sort exhibits O(n log n) time complexity across all cases – best, worst, and average. This consistent performance is attributable to its underlying principles.
+
+### Understanding the Reasoning
+
+#### Height of Complete Binary Tree
+The height of a complete binary tree with n elements is log n. This property forms the basis of Heap Sort's efficiency.
+
+#### Heapify Operation
+Heap Sort employs the heapify operation to maintain the max-heap property. In the worst-case scenario, we may need to relocate an element from the root to a leaf node, necessitating multiple comparisons and swaps.
+
+#### Build Max-Heap Stage
+During the build_max_heap stage, we perform heapify operations for n/2 elements. Consequently, the worst-case complexity of this step is approximately n/2 * log n, which simplifies to n log n.
+
+#### Sorting Stage
+In the sorting stage, we exchange the root element with the last element and heapify the root. Each heapify operation in this stage takes log n time. Since we repeat this process n times, the heap_sort stage also exhibits a time complexity of n log n.
+
+### Space Complexity: O(1)
+
+Heap Sort excels in space efficiency, boasting a constant O(1) space complexity. It requires minimal auxiliary storage, making it suitable for resource-constrained environments.
+
+### Stability: No
+
+Heap Sort is not a stable sorting algorithm. It may change the relative order of elements with equal keys, unlike stable sorting algorithms such as Merge Sort.
+
+### Applications of Heap Sort
+
+Heap Sort finds application in various domains, including:
+
+- Systems Concerned with Security and Embedded Systems: Linux Kernel utilizes Heap Sort due to its efficient time complexity and minimal space requirements.
+- Priority Queues: The underlying data structure of Heap Sort, the heap, is efficiently employed in priority queues to extract the smallest or largest elements without the overhead of maintaining sorted order.
+
+While Heap Sort may not enjoy as many applications as Quick Sort or Merge Sort, its efficacy in specific scenarios makes it a valuable tool in computer science and software engineering.
+
