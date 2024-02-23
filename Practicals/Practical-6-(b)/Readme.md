@@ -1,4 +1,4 @@
-# Heap Sort Algorithm Readme
+# Heap Sort Algorithm 
 
 Heap Sort is a powerful and efficient sorting technique widely used in computer programming. To understand how to implement the heap sort algorithm, it's essential to grasp two fundamental data structures: arrays and trees.
 
