@@ -52,3 +52,12 @@ int main() {
 
     return 0;
 }
+
+/*
+Output:
+Enter the value of n: 4
+The Fibonacci sequence up to the 4th number is:
+1 1 2 3 
+Time taken to compute the Fibonacci sequence: 0.000028 seconds
+
+*/
