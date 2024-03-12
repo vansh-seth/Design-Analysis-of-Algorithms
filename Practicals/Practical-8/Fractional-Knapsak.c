@@ -61,3 +61,10 @@ int main() {
 
     return 0;
 }
+
+/*
+Output:
+
+Maximum value in knapsack: 55.33
+
+*/
