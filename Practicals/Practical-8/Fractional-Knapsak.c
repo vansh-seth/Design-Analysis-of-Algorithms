@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h> 
+
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
+
 int partition(int values[], int weights[], float ratios[], int low, int high) {
     float pivot = ratios[high];
     int i = low - 1;
@@ -22,6 +25,7 @@ int partition(int values[], int weights[], float ratios[], int low, int high) {
     swap(&ratios[i + 1], &ratios[high]);
     return i + 1;
 }
+
 void quickSort(int values[], int weights[], float ratios[], int low, int high) {
     if (low < high) {
         int pi = partition(values, weights, ratios, low, high);
@@ -29,6 +33,7 @@ void quickSort(int values[], int weights[], float ratios[], int low, int high) {
         quickSort(values, weights, ratios, pi + 1, high);
     }
 }
+
 float fractionalKnapsack(int values[], int weights[], int n, int capacity) {
     float ratios[n];
     for (int i = 0; i < n; i++) {
@@ -55,9 +60,13 @@ int main() {
     int weights[] = {2, 3, 5, 7, 1, 4, 1};
     int n = sizeof(values) / sizeof(values[0]);
     int capacity = 15;
+    clock_t start = clock();
     float maxValue = fractionalKnapsack(values, weights, n, capacity);
+    clock_t end = clock();
+    double time_taken = ((double) (end - start)) / CLOCKS_PER_SEC;
 
     printf("Maximum value in knapsack: %.2f\n", maxValue);
+    printf("Time taken: %f seconds\n", time_taken);
 
     return 0;
 }
@@ -66,5 +75,6 @@ int main() {
 Output:
 
 Maximum value in knapsack: 55.33
+Time taken: 0.000001 seconds
 
 */
