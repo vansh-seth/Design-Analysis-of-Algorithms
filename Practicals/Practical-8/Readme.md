@@ -36,3 +36,21 @@ Hence, the value of the knapsack is:
 
 ## Code Implementation
 Refer to the provided code for an implementation of the knapsack problem solution in c. The code efficiently calculates the maximum value achievable within the given constraints.
+
+
+## Complexity Analysis
+
+### Time Complexity: \( O(N \log N) \)
+The time complexity arises from two main operations:
+1. Calculating the ratio of value to weight for each item, which requires traversing through the array of N items once, resulting in \( O(N) \).
+2. Sorting the items based on their ratios in descending order using merge sort, which has a time complexity of \( O(N \log N) \).
+
+Thus, the overall time complexity is \( O(N \log N) \).
+
+### Space Complexity: \( O(N) \)
+The space complexity primarily stems from the additional space required during the merge sort algorithm for arranging the ratios in descending order. As we need to store the ratios for each item, the space complexity is \( O(N) \).
+
+## Conclusion
+In the fractional knapsack problem, the goal is to maximize the value of the knapsack without exceeding its capacity. This is achieved using a greedy approach that sorts the items based on their value-to-weight ratios and iteratively adds them to the knapsack. The time complexity of the solution is \( O(N \log N) \), and the space complexity is \( O(N) \).
+
+This approach provides an efficient solution to the fractional knapsack problem, making it suitable for scenarios where maximizing value within weight constraints is essential.
