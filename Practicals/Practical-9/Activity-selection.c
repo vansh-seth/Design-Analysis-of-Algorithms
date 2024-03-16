@@ -26,3 +26,12 @@ int main()
     printf("Time taken: %f seconds\n", time_taken);
 	return 0; 
 }
+
+
+/*
+
+Output:
+Following activities are selected
+0 1 3 4 Time taken: 0.000078 seconds
+
+*/
