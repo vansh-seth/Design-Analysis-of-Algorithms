@@ -54,3 +54,11 @@ int main() {
     JobScheduling(arr, n);
     return 0;
 }
+
+/*
+Output:
+
+Following is maximum profit sequence of jobs 
+c a e 
+
+*/
