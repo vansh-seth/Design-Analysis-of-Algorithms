@@ -1,6 +1,4 @@
-Sure, here's a rewritten version for your README.md file:
 
----
 
 # 0/1 Knapsack Problem
 
