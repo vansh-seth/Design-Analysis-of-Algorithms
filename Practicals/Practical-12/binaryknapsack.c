@@ -26,3 +26,8 @@ int main()
     printf("%d", knapSack(W, weight, profit, n));
     return 0;
 }
+
+/*
+Output:
+220
+*/
