@@ -1,5 +1,3 @@
-
-
 # 0/1 Knapsack Problem
 
 The 0/1 Knapsack Problem is a classic optimization problem in computer science and combinatorial optimization. Given a set of items, each with a weight and a value, determine the number of each item to include in a knapsack so that the total weight is less than or equal to a given limit, and the total value is maximized.
