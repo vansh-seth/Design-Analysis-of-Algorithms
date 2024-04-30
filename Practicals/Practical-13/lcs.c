@@ -27,3 +27,11 @@ int main() {
 
     return 0;
 }
+
+
+/*
+Output:
+
+Length of LCS is 4
+
+*/
