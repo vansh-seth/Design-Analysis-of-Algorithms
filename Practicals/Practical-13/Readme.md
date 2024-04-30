@@ -45,8 +45,3 @@ Given two strings, S1 and S2, the task is to find the length of the Longest Comm
 
 You can utilize the provided code snippets to implement either the memoization or bottom-up approach for finding the LCS of two given strings. These approaches offer efficient solutions with different trade-offs in terms of space and time complexity.
 
-Feel free to incorporate additional examples or customize the explanations to suit your needs.
-
----
-
-This README.md file provides a clear overview of the Longest Common Subsequence problem, its various approaches, and their complexities. Customize it as necessary for your documentation.
