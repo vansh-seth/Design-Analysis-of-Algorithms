@@ -34,7 +34,7 @@ Given two strings, S1 and S2, the task is to find the length of the Longest Comm
 - This approach involves building a 2D array (`dp`) to store the lengths of common subsequences iteratively.
 - We initialize the `dp` array and then traverse through the strings to populate it based on certain conditions.
 - Finally, the last element of the `dp` array contains the length of the LCS.
-
+  
 ## Time and Space Complexity
 
 - **Time Complexity:** O(m * n), where m and n are the lengths of the input strings.
