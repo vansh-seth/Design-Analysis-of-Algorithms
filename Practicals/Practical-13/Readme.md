@@ -44,4 +44,3 @@ Given two strings, S1 and S2, the task is to find the length of the Longest Comm
 ## Usage
 
 You can utilize the provided code snippets to implement either the memoization or bottom-up approach for finding the LCS of two given strings. These approaches offer efficient solutions with different trade-offs in terms of space and time complexity.
-
