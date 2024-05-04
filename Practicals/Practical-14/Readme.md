@@ -49,4 +49,3 @@ In this approach, we iteratively find the number of multiplications required to 
 - **Time Complexity:** O(N^3)
 - **Auxiliary Space:** O(N^2)
 
-For detailed implementation, please refer to the code provided.
