@@ -33,3 +33,8 @@ int main()
 	getchar();
 	return 0;
 }
+
+/*
+Output:
+Minimum number of multiplications is 18
+*/
