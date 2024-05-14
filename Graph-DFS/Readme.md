@@ -59,6 +59,3 @@ In the `init()` function, we run the DFS function on every node to ensure that w
 - **Finding Strongly Connected Components**: To identify strongly connected components in a graph.
 - **Cycle Detection**: To detect cycles within a graph.
 
----
-
-This README file provides a concise explanation of the Depth First Search algorithm, including its steps, example, pseudocode, complexity, and applications.
