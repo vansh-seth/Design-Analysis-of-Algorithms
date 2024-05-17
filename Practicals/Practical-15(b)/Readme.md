@@ -46,35 +46,5 @@ Continue until the queue is empty.
 - **Level Order Traversal of Binary Trees**: Perform level order traversal of a binary tree.
 - **Network Routing**: Find the shortest path between two nodes in a network.
 
-## BFS Implementation in Python
-```python
-from collections import deque
-
-def bfs(graph, start):
-    visited = [False] * len(graph)
-    queue = deque([start])
-    visited[start] = True
-
-    while queue:
-        node = queue.popleft()
-        print(node, end=" ")
-
-        for neighbor in graph[node]:
-            if not visited[neighbor]:
-                queue.append(neighbor)
-                visited[neighbor] = True
-
-# Example usage
-graph = [
-    [1, 2],    # neighbors of node 0
-    [0, 3, 4], # neighbors of node 1
-    [0, 4],    # neighbors of node 2
-    [1, 4],    # neighbors of node 3
-    [1, 2, 3]  # neighbors of node 4
-]
-
-bfs(graph, 0)
-```
-
 ## Conclusion
 BFS is a powerful algorithm for traversing graphs and has various applications in computer science. By understanding and implementing BFS, you can solve many problems related to graphs effectively.
