@@ -6,9 +6,6 @@ Breadth First Search (BFS) is a fundamental graph traversal algorithm used to ex
 ## BFS Concept
 BFS explores vertices of a graph starting from a specified node and visiting all its neighbors before moving on to the next level of neighbors. It is useful for pathfinding, identifying connected components, and solving shortest path problems in graphs.
 
-## BFS vs. BFS for Trees
-BFS for graphs is similar to BFS for trees, with an additional consideration for cycles in graphs. To avoid processing a node more than once, BFS divides vertices into two categories: `visited` and `not visited`. A boolean `visited` array is used to keep track of visited vertices. BFS uses a queue data structure for traversal.
-
 ## BFS Algorithm
 1. **Initialization**: Enqueue the starting node and mark it as visited.
 2. **Exploration**:
