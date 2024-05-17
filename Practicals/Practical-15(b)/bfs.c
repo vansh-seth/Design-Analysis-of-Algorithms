@@ -63,3 +63,11 @@ int main()
     bfs(adjList, vertices, 0, visited);
 }
 
+
+/*
+
+Output:
+
+Breadth First Traversal starting from vertex 0: 0 1 2 3 4 
+
+*/
