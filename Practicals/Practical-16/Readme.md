@@ -6,7 +6,7 @@ Dijkstra's Algorithm is used to find the shortest path between two vertices in a
 
 ## How Dijkstra's Algorithm Works
 
-Dijkstra's Algorithm relies on the shortest subpath property, which states that any subpath \(B \rightarrow D\) of the shortest path \(A \rightarrow D\) is also the shortest path between vertices \(B\) and \(D\). 
+Dijkstra's Algorithm relies on the shortest subpath property, which states that any subpath \(B -> D\) of the shortest path \(A -> D\) is also the shortest path between vertices \(B\) and \(D\). 
 
 ### Key Steps:
 
