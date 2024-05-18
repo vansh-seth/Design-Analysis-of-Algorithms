@@ -49,7 +49,7 @@ function dijkstra(G, S)
 
 ## Complexity
 
-- **Time Complexity**: \(O(E \log V)\), where \(E\) is the number of edges and \(V\) is the number of vertices.
+- **Time Complexity**: \(O(E log V)\), where \(E\) is the number of edges and \(V\) is the number of vertices.
 - **Space Complexity**: \(O(V)\)
 
 ## Applications
