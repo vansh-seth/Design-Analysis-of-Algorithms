@@ -58,7 +58,3 @@ function dijkstra(G, S)
 - Social networking applications
 - Telephone networks
 - Mapping and navigation systems
-
----
-
-This `README.md` provides a detailed explanation of Dijkstra's Algorithm, its working principles, pseudocode, complexity analysis, and practical applications. This information serves as a comprehensive guide for understanding and implementing the algorithm in various scenarios.
