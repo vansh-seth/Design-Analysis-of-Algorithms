@@ -1,5 +1,3 @@
-# Design-Analysis-of-Algorithms
-
 # Design and Analysis of Algorithms (Lab)
 
 **Lab Course Name:** Design and Analysis of Algorithms Lab  
