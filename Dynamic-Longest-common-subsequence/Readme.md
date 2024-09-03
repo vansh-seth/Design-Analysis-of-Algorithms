@@ -1,5 +1,4 @@
 # Longest Common Subsequence (LCS)
-
 The Longest Common Subsequence (LCS) problem involves finding the length of the longest subsequence that is common to two given strings, S1 and S2.
 
 ## Problem Statement
