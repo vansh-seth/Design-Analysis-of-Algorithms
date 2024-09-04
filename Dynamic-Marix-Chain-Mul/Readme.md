@@ -1,5 +1,4 @@
 # Matrix Chain Multiplication
-
 Matrix Chain Multiplication is a classic problem in dynamic programming where the goal is to find the most efficient way to multiply a sequence of matrices together, minimizing the total number of element multiplications required.
 
 ## Problem Statement
