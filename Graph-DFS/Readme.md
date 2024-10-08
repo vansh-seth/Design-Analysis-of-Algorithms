@@ -1,5 +1,4 @@
 # Depth First Search (DFS)
-
 Depth First Search (DFS) or Depth First Traversal is a recursive algorithm used for searching all the vertices in a graph or tree data structure. Traversal means visiting all the nodes of a graph.
 
 ## DFS Algorithm
